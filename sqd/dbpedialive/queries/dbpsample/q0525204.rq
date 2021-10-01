@@ -1,0 +1,4 @@
+
+SELECT * 
+WHERE 
+{ ?s  ?p  <http://dbpedia.org/resource/Yarmouth> }

@@ -1,0 +1,34 @@
+
+SELECT * 
+WHERE 
+{ {   { ?place  <http://www.w3.org/2000/01/rdf-schema#label>  "Luna County"@en }
+    UNION
+      { ?place  <http://www.w3.org/2000/01/rdf-schema#label>  "Luna County, New Mexico"@en }
+    UNION
+      { ?place  <http://dbpedia.org/property/officialName>  "Luna County"@en }
+    UNION
+      { ?place  <http://dbpedia.org/property/name>  "Luna County"@en }
+    UNION
+      { ?place  <http://xmlns.com/foaf/0.1/name>  "Luna County"@en }
+    UNION
+      { ?place  <http://www.w3.org/2002/07/owl#sameAs>  <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000000a1439> }
+  }
+  {   { ?place  a                     ?type
+      
+      }
+    UNION
+      { ?place  <http://dbpedia.org/property/wikiPageUsesTemplate>  <http://dbpedia.org/resource/Template:coord> }
+  }
+  { ?place  <http://www.w3.org/2000/01/rdf-schema#label>  ?label
+  
+  }
+  OPTIONAL
+    {   { ?place  <http://www.w3.org/2003/01/geo/wgs84_pos#lat>  ?latitude ;
+                  <http://www.w3.org/2003/01/geo/wgs84_pos#long>  ?longitude
+        }
+      UNION
+        { ?place  <http://www.w3.org/2002/07/owl#sameAs>  ?sameAsUri }
+      UNION
+        { ?place  <http://xmlns.com/foaf/0.1/page>  ?linkUrl }
+    }
+}

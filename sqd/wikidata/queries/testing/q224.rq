@@ -1,0 +1,8 @@
+
+SELECT * 
+WHERE 
+{ ?h  <http://www.wikidata.org/prop/direct/P39>  <http://www.wikidata.org/entity/Q11696> ;
+      <http://www.wikidata.org/prop/direct/P509>  ?cause ;
+      <http://www.wikidata.org/prop/direct/P570>  ?date
+
+}

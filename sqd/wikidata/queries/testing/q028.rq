@@ -1,0 +1,7 @@
+
+SELECT * 
+WHERE 
+{ ?property1  a                   <http://wikiba.se/ontology#Property> ;
+            <http://www.wikidata.org/prop/direct/P1647>  ?property2
+
+}

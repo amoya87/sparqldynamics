@@ -1,0 +1,4 @@
+
+SELECT * 
+WHERE 
+{ ?value  <http://xmlns.com/foaf/0.1/name>  "Armentières-sur-Avre"@en }

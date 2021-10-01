@@ -1,0 +1,38 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Famke_Janssen>
+            <http://www.w3.org/2000/01/rdf-schema#label>  ?label
+  
+  OPTIONAL
+    { <http://dbpedia.org/resource/Famke_Janssen>
+                <http://www.w3.org/2000/01/rdf-schema#comment>  ?comment
+    
+    }
+  OPTIONAL
+    { <http://dbpedia.org/resource/Famke_Janssen>
+                <http://dbpedia.org/ontology/abstract>  ?abstract
+    
+    }
+  OPTIONAL
+    { <http://dbpedia.org/resource/Famke_Janssen>
+                <http://xmlns.com/foaf/0.1/homepage>  ?homepage
+    }
+  OPTIONAL
+    { <http://dbpedia.org/resource/Famke_Janssen>
+                <http://xmlns.com/foaf/0.1/depiction>  ?depiction
+    }
+  OPTIONAL
+    { <http://dbpedia.org/resource/Famke_Janssen>
+                <http://dbpedia.org/ontology/thumbnail>  ?thumbnail
+    }
+  OPTIONAL
+    { <http://dbpedia.org/resource/Famke_Janssen>
+                <http://dbpedia.org/property/hasPhotoCollection>  ?photoCollection
+    }
+  OPTIONAL
+    { <http://dbpedia.org/resource/Famke_Janssen>
+                a                     ?category
+    
+    }
+}

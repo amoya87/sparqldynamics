@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ ?pid  <http://www.wikidata.org/prop/direct/P39>  <http://www.wikidata.org/entity/Q11696> ;
+        <http://www.wikidata.org/prop/direct/P509>  ?cid .
+}

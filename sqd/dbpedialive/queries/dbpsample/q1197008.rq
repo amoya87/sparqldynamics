@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/1983_United_States_Grand_Prix_West>
+            <http://dbpedia.org/property/course>  ?value
+}

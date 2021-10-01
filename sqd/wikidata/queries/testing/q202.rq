@@ -1,0 +1,8 @@
+
+SELECT * 
+WHERE 
+{ VALUES ?author { <http://www.wikidata.org/entity/Q18016466> }
+  ?entity  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q13442814> ;
+           <http://www.wikidata.org/prop/direct/P50>  ?author
+
+}

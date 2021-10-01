@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/First_Solar>
+            <http://dbpedia.org/property/homepage>  ?val
+}

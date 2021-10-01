@@ -1,0 +1,39 @@
+
+SELECT * 
+WHERE 
+{   { ?medium  <http://www.w3.org/2000/01/rdf-schema#label>  "World of Wonder"@en }
+  UNION
+    { ?medium  <http://www.w3.org/2000/01/rdf-schema#label>  "World of Wonder (magazine)"@en }
+  UNION
+    { ?medium  <http://www.w3.org/2000/01/rdf-schema#label>  "World of Wonder (newspaper)"@en }
+  UNION
+    { ?medium  <http://xmlns.com/foaf/0.1/name>  "World of Wonder" }
+  UNION
+    { ?medium  <http://www.w3.org/2000/01/rdf-schema#label>  "World of Wonder"@en }
+  UNION
+    { ?medium  <http://www.w3.org/2000/01/rdf-schema#label>  "The World of Wonder"@en }
+  UNION
+    { ?medium  <http://xmlns.com/foaf/0.1/name>  "World of Wonder" }
+    { ?medium  a                     <http://dbpedia.org/ontology/Newspaper> }
+  UNION
+    { ?medium  a                     <http://dbpedia.org/ontology/Magazine> }
+  UNION
+    { ?medium  a                     ?mediumType
+    
+    }
+  UNION
+    { ?medium  <http://www.w3.org/2004/02/skos/core#subject>  ?subject
+    
+    }
+  UNION
+    { ?medium  <http://dbpedia.org/property/wikiPageUsesTemplate>  <http://dbpedia.org/resource/Template:infobox_newspaper> }
+  UNION
+    { ?medium  <http://dbpedia.org/property/wikiPageUsesTemplate>  <http://dbpedia.org/resource/Template:infobox_magazine> }
+  OPTIONAL
+    {   { ?medium  <http://xmlns.com/foaf/0.1/page>  ?linkUrl }
+      UNION
+        { ?medium  <http://www.w3.org/2002/07/owl#sameAs>  ?sameAsUri }
+    }
+  OPTIONAL
+    { ?medium  <http://dbpedia.org/property/firstdate>  ?firstDate }
+}

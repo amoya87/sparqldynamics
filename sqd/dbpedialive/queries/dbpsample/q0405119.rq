@@ -1,0 +1,45 @@
+
+SELECT * 
+WHERE 
+{   { <http://dbpedia.org/resource/Visual_C%2b%2b>
+                <http://dbpedia.org/property/redirect>  ?lang
+    }
+  UNION
+    { <http://dbpedia.org/resource/Visual_C%2b%2b_programming_language>
+                <http://dbpedia.org/property/redirect>  ?lang
+    }
+  UNION
+    { <http://dbpedia.org/resource/Visual_C%2b%2b_%28programming_language%29>
+                <http://dbpedia.org/property/redirect>  ?lang
+    }
+  UNION
+    { ?lang  <http://www.w3.org/2000/01/rdf-schema#label>  "Visual C++"@en }
+  UNION
+    { ?lang  <http://www.w3.org/2000/01/rdf-schema#label>  "Visual C++ (programming language)"@en }
+  UNION
+    { ?lang  <http://dbpedia.org/property/name>  "Visual C++"@en }
+  UNION
+    { ?lang  <http://xmlns.com/foaf/0.1/name>  "Visual C++" }
+  UNION
+    { ?lang  <http://www.w3.org/2000/01/rdf-schema#label>  "Visual C++"@en }
+  UNION
+    { ?lang  <http://www.w3.org/2000/01/rdf-schema#label>  "Visual C++ (programming language)"@en }
+  UNION
+    { ?lang  <http://xmlns.com/foaf/0.1/name>  "Visual C++" }
+    { ?lang  a                     ?langType
+    
+    }
+  UNION
+    { ?lang  <http://www.w3.org/2004/02/skos/core#subject>  ?subject
+    
+    }
+  UNION
+    { ?lang  <http://dbpedia.org/property/wikiPageUsesTemplate>  ?template
+    
+    }
+  OPTIONAL
+    {   { ?lang  <http://www.w3.org/2002/07/owl#sameAs>  ?sameAsUri }
+      UNION
+        { ?lang  <http://xmlns.com/foaf/0.1/page>  ?linkUrl }
+    }
+}

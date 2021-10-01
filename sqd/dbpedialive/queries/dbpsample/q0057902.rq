@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Zoran_Mirkovi%C4%87>
+            <http://dbpedia.org/property/title>  ?value
+}

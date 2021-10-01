@@ -1,0 +1,7 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Bluewater_Insurance>
+            <http://www.w3.org/2000/01/rdf-schema#label>  ?var_1
+
+}

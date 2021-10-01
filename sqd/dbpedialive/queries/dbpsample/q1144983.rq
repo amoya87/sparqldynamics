@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Category:Weapons_of_Canada>
+            <http://www.w3.org/2004/02/skos/core#prefLabel>  ?value
+}

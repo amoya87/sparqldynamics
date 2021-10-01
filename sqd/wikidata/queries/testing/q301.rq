@@ -1,0 +1,7 @@
+
+SELECT * 
+WHERE 
+{ ?item  <http://www.wikidata.org/prop/direct/P136>  <http://www.wikidata.org/entity/Q557141> ;
+         <http://www.wikidata.org/prop/direct/P131>  ?place
+
+}

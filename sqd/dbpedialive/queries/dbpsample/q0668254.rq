@@ -1,0 +1,42 @@
+
+SELECT * 
+WHERE 
+{ {   { ?place  <http://www.w3.org/2000/01/rdf-schema#label>  "West Milford"@en }
+    UNION
+      { ?place  <http://www.w3.org/2000/01/rdf-schema#label>  "West Milford, New Jersey"@en }
+    UNION
+      { ?place  <http://dbpedia.org/property/officialName>  "West Milford"@en }
+    UNION
+      { ?place  <http://dbpedia.org/property/name>  "West Milford"@en }
+    UNION
+      { ?place  <http://xmlns.com/foaf/0.1/name>  "West Milford"@en }
+    UNION
+      { ?place  <http://www.w3.org/2002/07/owl#sameAs>  <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000000e6023> }
+  }
+  {   { ?place  a                     ?type
+      
+      }
+    UNION
+      { ?place  <http://dbpedia.org/property/population>  ?pop }
+  }
+  { ?place  <http://www.w3.org/2000/01/rdf-schema#label>  ?label
+  
+  }
+  OPTIONAL
+    {   { ?place  <http://dbpedia.org/property/latm>  ?latm ;
+                  <http://dbpedia.org/property/longm>  ?longm
+        }
+      UNION
+        { ?place  <http://dbpedia.org/property/latM>  ?latm ;
+                  <http://dbpedia.org/property/longM>  ?longm
+        }
+      UNION
+        { ?place  <http://www.w3.org/2003/01/geo/wgs84_pos#lat>  ?latitude ;
+                  <http://www.w3.org/2003/01/geo/wgs84_pos#long>  ?longitude
+        }
+      UNION
+        { ?place  <http://www.w3.org/2002/07/owl#sameAs>  ?sameAsUri }
+      UNION
+        { ?place  <http://xmlns.com/foaf/0.1/page>  ?linkUrl }
+    }
+}

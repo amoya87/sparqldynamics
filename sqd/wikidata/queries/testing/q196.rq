@@ -1,0 +1,10 @@
+
+SELECT * 
+WHERE 
+{ ?astronaut  ?x1                 <http://www.wikidata.org/entity/Q11631> ;
+            <http://www.wikidata.org/prop/direct/P18>  ?image ;
+            <http://www.wikidata.org/prop/direct/P569>  ?birthdate ;
+            <http://www.wikidata.org/prop/direct/P19>  ?birthplace .
+  ?birthplace  <http://www.wikidata.org/prop/direct/P625>  ?coord
+
+}

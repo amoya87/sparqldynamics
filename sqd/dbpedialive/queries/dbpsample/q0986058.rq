@@ -1,0 +1,7 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Pedophilia>
+            <http://dbpedia.org/ontology/abstract>  ?abstract
+
+}

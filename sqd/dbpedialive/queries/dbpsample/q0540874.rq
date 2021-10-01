@@ -1,0 +1,4 @@
+
+SELECT * 
+WHERE 
+{ ?s  ?p  <http://dbpedia.org/resource/Category:Italian_pop_music_groups> }

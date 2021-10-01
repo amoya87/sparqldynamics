@@ -1,0 +1,9 @@
+
+SELECT * 
+WHERE 
+{ ?item     ?propertyRel          ?standard .
+  ?standard  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q317623> .
+  ?propertyItem
+            <http://wikiba.se/ontology#directClaim>  ?propertyRel
+
+}

@@ -1,0 +1,9 @@
+
+SELECT * 
+WHERE 
+{ ?item  <http://www.wikidata.org/prop/direct/P2218>  ?worth ;
+         <http://www.wikidata.org/prop/direct/P19>  ?location
+  
+  
+
+}

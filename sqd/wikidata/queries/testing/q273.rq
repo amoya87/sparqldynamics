@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ ?work  <http://www.wikidata.org/prop/direct/P826>  ?tonality
+
+}

@@ -1,0 +1,12 @@
+
+SELECT * 
+WHERE 
+{ ?city  <http://www.wikidata.org/prop/direct/P1082>  ?population .  
+  ?city     <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q515> ;
+            <http://www.wikidata.org/prop/direct/P17>  ?country .
+  ?country  <http://www.wikidata.org/prop/direct/P37>  ?lang .
+  ?lang     <http://www.wikidata.org/prop/direct/P424>  ?langCode
+  
+  
+
+}

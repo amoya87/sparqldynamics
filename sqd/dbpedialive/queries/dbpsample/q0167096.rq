@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Nassau_Veterans_Memorial_Coliseum>
+            <http://dbpedia.org/property/architect>  ?value
+}

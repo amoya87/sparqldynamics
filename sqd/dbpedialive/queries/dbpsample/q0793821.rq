@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/2001_Monaco_Grand_Prix>
+            <http://www.georss.org/georss/point>  ?value
+}

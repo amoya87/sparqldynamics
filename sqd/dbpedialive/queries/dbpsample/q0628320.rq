@@ -1,0 +1,12 @@
+
+SELECT * 
+WHERE 
+{   { <http://dbpedia.org/resource/LA_County>
+                ?property             ?hasValue .
+      ?hasValue  <http://www.w3.org/2000/01/rdf-schema#label>  ?name
+    }
+  UNION
+    { ?isValueOf  ?property           <http://dbpedia.org/resource/LA_County> ;
+                <http://www.w3.org/2000/01/rdf-schema#label>  ?name2
+    }
+}

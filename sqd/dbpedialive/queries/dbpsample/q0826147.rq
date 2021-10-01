@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/1997_Japanese_Grand_Prix>
+            <http://dbpedia.org/property/yearOfRace>  ?value
+}

@@ -1,0 +1,7 @@
+
+SELECT * 
+WHERE 
+{ ?person  <http://dbpedia.org/property/nationalteam>  <http://dbpedia.org/resource/Spain_national_football_team> ;
+           <http://dbpedia.org/property/clubs>  <http://dbpedia.org/resource/Real_Madrid_C.F.> ;
+           <http://xmlns.com/foaf/0.1/name>  ?name
+}

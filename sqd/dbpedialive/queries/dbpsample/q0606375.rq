@@ -1,0 +1,7 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/class/yago/YorubaDeities>
+            <http://www.w3.org/2000/01/rdf-schema#subClassOf>  ?category
+
+}

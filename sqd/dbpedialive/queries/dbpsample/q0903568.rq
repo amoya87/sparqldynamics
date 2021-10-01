@@ -1,0 +1,8 @@
+
+SELECT * 
+WHERE 
+{ ?subject  a                     <http://dbpedia.org/class/yago/CapitalsInEurope> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>  ?label ;
+            <http://www.w3.org/2000/01/rdf-schema#comment>  ?abstract
+
+}

@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Texas_Stadium>
+            <http://dbpedia.org/property/tenants>  ?value
+}

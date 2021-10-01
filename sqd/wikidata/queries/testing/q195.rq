@@ -1,0 +1,8 @@
+
+SELECT * 
+WHERE 
+{ ?spaceProbe  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q26529> ;
+            <http://www.wikidata.org/prop/direct/P18>  ?picture ;
+            <http://www.wikidata.org/prop/direct/P619>  ?date
+
+}

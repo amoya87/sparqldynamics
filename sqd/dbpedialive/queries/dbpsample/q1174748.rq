@@ -1,0 +1,11 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Plant_City_Municipal_Airport>
+            ?property  ?hasValue
+  OPTIONAL
+    { ?hasValue  <http://www.w3.org/2000/01/rdf-schema#label>  ?itemlabel }
+  OPTIONAL
+    { ?property  <http://www.w3.org/2000/01/rdf-schema#label>  ?label }
+
+}

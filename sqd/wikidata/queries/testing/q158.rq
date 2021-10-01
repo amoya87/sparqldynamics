@@ -1,0 +1,12 @@
+
+SELECT * 
+WHERE 
+{ VALUES ?biomarker { <http://www.wikidata.org/entity/Q420633> <http://www.wikidata.org/entity/Q27125809> <http://www.wikidata.org/entity/Q422462> }
+  ?biomarker  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q11173> ;
+            <http://www.wikidata.org/prop/direct/P638>  ?pdbID .
+  ?protein  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q8054> ;
+            <http://www.wikidata.org/prop/direct/P638>  ?pdbID ;
+            <http://www.wikidata.org/prop/direct/P702>  ?gene .
+  ?gene     <http://www.wikidata.org/prop/direct/P703>  <http://www.wikidata.org/entity/Q15978631> ;
+            <http://www.wikidata.org/prop/direct/P2888>  ?geneID .
+}

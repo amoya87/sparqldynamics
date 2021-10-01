@@ -1,0 +1,12 @@
+
+SELECT * 
+WHERE 
+{   { ?person  <http://www.wikidata.org/prop/direct/P106>  <http://www.wikidata.org/entity/Q188094> }
+  UNION
+    { ?person  <http://www.wikidata.org/prop/direct/P101>  <http://www.wikidata.org/entity/Q8134> }
+  ?person  <http://www.wikidata.org/prop/direct/P570>  ?dod ;
+           <http://www.wikidata.org/prop/direct/P19>  ?place .
+  ?place   <http://www.wikidata.org/prop/direct/P625>  ?coord
+  OPTIONAL
+    { ?person  <http://www.wikidata.org/prop/direct/P569>  ?dob }
+}

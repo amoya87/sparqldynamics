@@ -1,0 +1,9 @@
+
+SELECT * 
+WHERE 
+{   { <http://dbpedia.org/resource/Concorde>
+                ?property  ?hasValue
+    }
+  UNION
+    { ?isValueOf  ?property  <http://dbpedia.org/resource/Concorde> }
+}

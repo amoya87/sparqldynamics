@@ -1,0 +1,4 @@
+
+SELECT * 
+WHERE 
+{ ?resource  <http://dbpedia.org/ontology/binomialAuthority>  ?value }

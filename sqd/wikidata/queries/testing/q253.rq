@@ -1,0 +1,14 @@
+
+SELECT * 
+WHERE 
+{ ?human  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q5> ;
+          <http://www.wikidata.org/prop/direct/P106>  <http://www.wikidata.org/entity/Q33999> ;
+          <http://www.wikidata.org/prop/direct/P18>  ?picture
+  OPTIONAL
+    { ?human  <http://www.wikidata.org/prop/direct/P569>  ?dob ;
+              <http://www.wikidata.org/prop/direct/P570>  ?dod
+    }
+  
+  
+
+}

@@ -1,0 +1,7 @@
+
+SELECT * 
+WHERE 
+{ ?human  <http://www.wikidata.org/prop/direct/P21>  ?gender
+  
+
+}

@@ -1,0 +1,10 @@
+
+SELECT * 
+WHERE 
+{ <http://www.wikidata.org/entity/Q458>
+                        <http://www.wikidata.org/prop/direct/P150>  ?country .
+  ?person   <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q5> ;
+            <http://www.wikidata.org/prop/direct/P27>  ?country .
+  ?country  <http://www.wikidata.org/prop/direct/P1082>  ?population
+
+}

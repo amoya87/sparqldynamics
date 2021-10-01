@@ -1,0 +1,21 @@
+
+SELECT * 
+WHERE 
+{   { <http://dbpedia.org/resource/Cell_membrane>
+                <http://www.w3.org/2000/01/rdf-schema#comment>  ?abstract
+    
+    }
+  UNION
+    { <http://dbpedia.org/resource/Cell_membrane>
+                <http://www.w3.org/2000/01/rdf-schema#comment>  ?abstract
+    
+    }
+  UNION
+    { <http://dbpedia.org/resource/Cell_membrane>
+                <http://xmlns.com/foaf/0.1/depiction>  ?depiction
+    }
+  UNION
+    { <http://dbpedia.org/resource/Cell_membrane>
+                <http://xmlns.com/foaf/0.1/homepage>  ?homepage
+    }
+}

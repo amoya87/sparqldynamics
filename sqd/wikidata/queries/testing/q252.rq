@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ ?play  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q25379>
+
+}

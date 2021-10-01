@@ -1,0 +1,10 @@
+
+SELECT * 
+WHERE 
+{ ?border_city  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q902814>
+  OPTIONAL
+    { ?border_city  <http://www.wikidata.org/prop/direct/P17>  ?country }
+  OPTIONAL
+    { ?border_city  <http://www.wikidata.org/prop/direct/P625>  ?coords }
+
+}

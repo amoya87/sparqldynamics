@@ -1,0 +1,7 @@
+
+SELECT * 
+WHERE 
+{ ?subject  a                     <http://dbpedia.org/ontology/Place> ;
+            <http://dbpedia.org/property/location>  <http://dbpedia.org/resource/Greece> ;
+            <http://www.w3.org/2002/07/owl#sameAs>  ?links
+}

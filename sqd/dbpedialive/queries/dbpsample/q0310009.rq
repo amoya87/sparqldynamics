@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ ?subject  <http://dbpedia.org/property/starring>  <http://dbpedia.org/resource/Tom_Cruise> ;
+            <http://dbpedia.org/property/director>  ?prop
+}

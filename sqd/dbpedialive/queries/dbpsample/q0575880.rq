@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Doodles_Weaver>
+            <http://dbpedia.org/property/wordnet_type>  ?value
+}

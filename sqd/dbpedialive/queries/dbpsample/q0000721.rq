@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/1989_San_Marino_Grand_Prix>
+            <http://dbpedia.org/property/thirdTeam>  ?value
+}

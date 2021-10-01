@@ -1,0 +1,7 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Ron_Boswell>
+            <http://dbpedia.org/ontology/abstract>  ?abstract
+
+}

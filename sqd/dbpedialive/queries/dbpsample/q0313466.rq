@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Palais_des_Sports_de_Gerland>
+            <http://www.georss.org/georss/point>  ?value
+}

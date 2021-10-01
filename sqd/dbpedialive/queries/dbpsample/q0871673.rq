@@ -1,0 +1,8 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Montebelluna>
+            <http://www.w3.org/2003/01/geo/wgs84_pos#lat>  ?placeLat ;
+            <http://www.w3.org/2003/01/geo/wgs84_pos#long>  ?placeLong
+
+}

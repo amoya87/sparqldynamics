@@ -1,0 +1,38 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Ashton_Kutcher>
+            <http://www.w3.org/2000/01/rdf-schema#label>  ?label
+  
+  OPTIONAL
+    { <http://dbpedia.org/resource/Ashton_Kutcher>
+                <http://www.w3.org/2000/01/rdf-schema#comment>  ?comment
+    
+    }
+  OPTIONAL
+    { <http://dbpedia.org/resource/Ashton_Kutcher>
+                <http://dbpedia.org/ontology/abstract>  ?abstract
+    
+    }
+  OPTIONAL
+    { <http://dbpedia.org/resource/Ashton_Kutcher>
+                <http://xmlns.com/foaf/0.1/homepage>  ?homepage
+    }
+  OPTIONAL
+    { <http://dbpedia.org/resource/Ashton_Kutcher>
+                <http://xmlns.com/foaf/0.1/depiction>  ?depiction
+    }
+  OPTIONAL
+    { <http://dbpedia.org/resource/Ashton_Kutcher>
+                <http://dbpedia.org/ontology/thumbnail>  ?thumbnail
+    }
+  OPTIONAL
+    { <http://dbpedia.org/resource/Ashton_Kutcher>
+                <http://dbpedia.org/property/hasPhotoCollection>  ?photoCollection
+    }
+  OPTIONAL
+    { <http://dbpedia.org/resource/Ashton_Kutcher>
+                a                     ?category
+    
+    }
+}

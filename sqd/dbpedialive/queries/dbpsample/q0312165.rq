@@ -1,0 +1,16 @@
+
+SELECT * 
+WHERE 
+{   { <http://dbpedia.org/resource/List_of_syndicated_columnists>
+                <http://www.w3.org/2000/01/rdf-schema#comment>  ?abstract
+    
+    }
+  UNION
+    { <http://dbpedia.org/resource/List_of_syndicated_columnists>
+                <http://xmlns.com/foaf/0.1/depiction>  ?depiction
+    }
+  UNION
+    { <http://dbpedia.org/resource/List_of_syndicated_columnists>
+                <http://xmlns.com/foaf/0.1/homepage>  ?homepage
+    }
+}

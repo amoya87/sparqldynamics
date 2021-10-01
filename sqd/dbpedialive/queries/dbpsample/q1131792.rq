@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Jack_Kevorkian>
+            <http://dbpedia.org/ontology/deathDate>  ?obj
+}

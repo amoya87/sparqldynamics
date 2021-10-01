@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ ?musician  a                    <http://dbpedia.org/ontology/MusicalArtist> ;
+            <http://dbpedia.org/ontology/birthPlace>  ?birthplace
+}

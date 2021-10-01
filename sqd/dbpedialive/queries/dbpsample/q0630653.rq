@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/1998_Italian_Grand_Prix>
+            <http://dbpedia.org/property/grandPrix>  ?value
+}

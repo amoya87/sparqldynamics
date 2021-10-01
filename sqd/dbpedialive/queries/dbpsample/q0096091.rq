@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/East_Coast_Akalat>
+            a                     ?value
+}

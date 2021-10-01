@@ -1,0 +1,37 @@
+
+SELECT * 
+WHERE 
+{   { <http://dbpedia.org/resource/abdominoplasty>
+                <http://dbpedia.org/property/redirect>  ?treatment
+    }
+  UNION
+    { <http://dbpedia.org/resource/Abdominoplasty>
+                <http://dbpedia.org/property/redirect>  ?treatment
+    }
+  UNION
+    { ?treatment  <http://www.w3.org/2000/01/rdf-schema#label>  "abdominoplasty"@en }
+  UNION
+    { ?treatment  <http://dbpedia.org/property/name>  "abdominoplasty"@en }
+  UNION
+    { ?treatment  <http://xmlns.com/foaf/0.1/name>  "abdominoplasty" }
+  UNION
+    { ?treatment  <http://www.w3.org/2000/01/rdf-schema#label>  "Abdominoplasty"@en }
+  UNION
+    { ?treatment  <http://xmlns.com/foaf/0.1/name>  "Abdominoplasty" }
+    { ?treatment  a                   ?treatmentType
+    
+    }
+  UNION
+    { ?treatment  <http://www.w3.org/2004/02/skos/core#subject>  ?subject
+    
+    }
+  UNION
+    { ?treatment  <http://dbpedia.org/property/wikiPageUsesTemplate>  ?template
+    
+    }
+  OPTIONAL
+    {   { ?treatment  <http://www.w3.org/2002/07/owl#sameAs>  ?sameAsUri }
+      UNION
+        { ?treatment  <http://xmlns.com/foaf/0.1/page>  ?linkUrl }
+    }
+}

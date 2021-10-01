@@ -1,0 +1,47 @@
+
+SELECT * 
+WHERE 
+{ {   { <http://dbpedia.org/resource/Asia_Comcl_Bk>
+                  <http://dbpedia.org/property/redirect>  ?company
+      }
+    UNION
+      { <http://dbpedia.org/resource/Asia_Commercial_Bank>
+                  <http://dbpedia.org/property/redirect>  ?company
+      }
+    UNION
+      { ?company  <http://dbpedia.org/property/homepage>  <http://www.acb.com.vn> }
+    UNION
+      { ?company  <http://dbpedia.org/property/homepage>  <http://www.acb.com.vn/> }
+    UNION
+      { ?company  <http://dbpedia.org/property/symbol>  "ASCOB" }
+    UNION
+      { ?company  <http://www.w3.org/2000/01/rdf-schema#label>  "Asia Commercial Bank"@en }
+    UNION
+      { ?company  <http://www.w3.org/2000/01/rdf-schema#label>  "Asia Comcl Bk"@en }
+    UNION
+      { ?company  <http://www.w3.org/2000/01/rdf-schema#label>  "Asia Comcl Bk"@en }
+    UNION
+      { ?company  <http://dbpedia.org/property/name>  "Asia Commercial Bank"@en }
+    UNION
+      { ?company  <http://dbpedia.org/property/companyName>  "Asia Commercial Bank"@en }
+    UNION
+      { ?company  <http://xmlns.com/foaf/0.1/name>  "Asia Commercial Bank" }
+  }
+  { ?company  a                     ?type
+  
+  }
+  { ?company  <http://www.w3.org/2000/01/rdf-schema#label>  ?label
+  
+  }
+  OPTIONAL
+    {   { ?company  <http://dbpedia.org/property/homepage>  ?webaddress }
+      UNION
+        { ?company  <http://dbpedia.org/property/companyName>  ?companyName }
+      UNION
+        { ?company  <http://dbpedia.org/property/symbol>  ?symbol }
+      UNION
+        { ?company  <http://www.w3.org/2002/07/owl#sameAs>  ?sameAsUri }
+      UNION
+        { ?company  <http://xmlns.com/foaf/0.1/page>  ?linkUrl }
+    }
+}

@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Broni>
+            <http://xmlns.com/foaf/0.1/name>  ?value
+}

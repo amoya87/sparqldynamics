@@ -1,0 +1,4 @@
+
+SELECT * 
+WHERE 
+{ ?subj  <http://www.w3.org/2002/07/owl#sameAs>  <http://sws.geonames.org/3578421/> }

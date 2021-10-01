@@ -1,0 +1,10 @@
+
+SELECT * 
+WHERE 
+{ ?muni  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q2039348> ;
+         <http://www.wikidata.org/prop/direct/P131>  <http://www.wikidata.org/entity/Q705> .
+  ?gate  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q82117> ;
+         <http://www.wikidata.org/prop/direct/P131>  ?muni ;
+         <http://www.wikidata.org/prop/direct/P276>  ?town
+
+}

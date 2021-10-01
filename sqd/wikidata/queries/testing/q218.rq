@@ -1,0 +1,7 @@
+
+SELECT * 
+WHERE 
+{ ?planet   <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q2775969> ;
+            <http://www.wikidata.org/prop/direct/P1080>  ?universe .
+
+}

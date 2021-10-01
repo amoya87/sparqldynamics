@@ -1,0 +1,7 @@
+
+SELECT * 
+WHERE 
+{ ?disease  <http://www.wikidata.org/prop/direct/P699>  ?doid .
+  
+
+}

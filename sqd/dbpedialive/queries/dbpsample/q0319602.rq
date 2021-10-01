@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Miami_Orange_Bowl>
+            <http://dbpedia.org/property/surface>  ?value
+}

@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/2003_Spanish_Grand_Prix>
+            <http://dbpedia.org/property/location>  ?value
+}

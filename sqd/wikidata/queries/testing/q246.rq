@@ -1,0 +1,14 @@
+
+SELECT * 
+WHERE 
+{ <http://www.wikidata.org/entity/Q75849591>
+            <http://www.wikidata.org/prop/direct/P527>  [<http://www.wikidata.org/prop/direct/P527>  ?item ;
+            <http://www.wikidata.org/prop/direct/P361>  ?pb ].
+  ?pb       <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q76598130> .
+  ?item     <http://www.wikidata.org/prop/direct/P625>  ?coord
+  OPTIONAL
+    { ?item  <http://www.wikidata.org/prop/direct/P373>  ?cat }
+  OPTIONAL
+    { ?item  <http://www.wikidata.org/prop/direct/P18>  ?img }
+
+}

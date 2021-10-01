@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/1983_Monaco_Grand_Prix>
+            <http://dbpedia.org/property/nameOfRace>  ?value
+}

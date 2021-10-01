@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ ?property  <http://wikiba.se/ontology#propertyType>  ?propertyType
+
+}

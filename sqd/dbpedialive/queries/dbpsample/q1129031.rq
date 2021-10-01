@@ -1,0 +1,4 @@
+
+SELECT * 
+WHERE 
+{ ?value  <http://www.w3.org/2000/01/rdf-schema#label>  "Henry Boardman Conover"@en }

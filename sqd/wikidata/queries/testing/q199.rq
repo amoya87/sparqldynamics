@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ ?item    <http://www.wikidata.org/prop/direct/P138>  ?eponym .
+  ?eponym  <http://www.wikidata.org/prop/direct/P106>  <http://www.wikidata.org/entity/Q170790>
+}

@@ -1,0 +1,10 @@
+
+SELECT * 
+WHERE 
+{ 
+  ?poet     <http://www.wikidata.org/prop/direct/P106>  <http://www.wikidata.org/entity/Q49757> ;
+            <http://www.wikidata.org/prop/direct/P497>  ?cbdbId ;
+            <http://www.wikidata.org/prop/direct/P569>  ?birthDate .  
+  ?poet  <http://www.wikidata.org/prop/direct/P570>  ?deathDate
+
+}

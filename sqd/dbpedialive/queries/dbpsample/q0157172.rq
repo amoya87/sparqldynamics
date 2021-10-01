@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/World_Container>
+            <http://www.w3.org/2000/01/rdf-schema#label>  ?label
+}

@@ -1,0 +1,8 @@
+
+SELECT * 
+WHERE 
+{ ?item     <http://www.wikidata.org/prop/direct/P2860>  ?publication .
+  ?publication  <http://www.wikidata.org/prop/direct/P50>  ?author .
+  ?author   <http://www.wikidata.org/prop/direct/P21>  <http://www.wikidata.org/entity/Q6581072>
+
+}

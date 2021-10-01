@@ -1,0 +1,8 @@
+
+SELECT * 
+WHERE 
+{ VALUES ?performer { <http://www.wikidata.org/entity/Q936474> <http://www.wikidata.org/entity/Q207898> }
+  ?album  <http://www.wikidata.org/prop/direct/P175>  ?performer ;
+          <http://www.wikidata.org/prop/direct/P577>  ?publication_date
+
+}

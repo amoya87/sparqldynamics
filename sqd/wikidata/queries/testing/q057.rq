@@ -1,0 +1,10 @@
+
+SELECT * 
+WHERE 
+{ ?doctor  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q34358>
+  OPTIONAL
+    { ?doctor  <http://www.wikidata.org/prop/direct/P1545>  ?ordinal }
+  OPTIONAL
+    { ?doctor  <http://www.wikidata.org/prop/direct/P175>  ?performer }
+
+}

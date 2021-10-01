@@ -1,0 +1,8 @@
+
+SELECT * 
+WHERE 
+{ ?person  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q5> ;
+           <http://www.wikidata.org/prop/direct/P509>  <http://www.wikidata.org/entity/Q468455> ;
+           <http://www.wikidata.org/prop/direct/P570>  ?date
+
+}

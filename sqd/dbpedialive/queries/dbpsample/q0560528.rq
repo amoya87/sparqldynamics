@@ -1,0 +1,7 @@
+
+SELECT * 
+WHERE 
+{ ?person  <http://dbpedia.org/ontology/birthDate>  ?date ;
+           <http://xmlns.com/foaf/0.1/name>  ?name
+
+}

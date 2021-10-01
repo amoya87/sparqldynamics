@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/class/yago/RadioStation104044119>
+            ?p  ?o
+}

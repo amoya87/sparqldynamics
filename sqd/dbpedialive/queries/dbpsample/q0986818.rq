@@ -1,0 +1,22 @@
+
+SELECT * 
+WHERE 
+{ ?actor1  a                     <http://dbpedia.org/ontology/Actor> .
+  ?actor2  a                     <http://dbpedia.org/ontology/Actor>
+    { ?actor1  <http://dbpedia.org/ontology/partner>  ?actor2 }
+  UNION
+    { ?actor1  <http://dbpedia.org/ontology/spouse>  ?actor2 }
+  ?film1    ?starring             ?actor1 ;
+            ?starring             ?actor2 .
+  ?film2    ?starring             ?actor1 ;
+            ?starring             ?actor2 .
+  ?film3    <http://dbpedia.org/ontology/director>  ?director .
+  ?director  a                    <http://dbpedia.org/class/yago/AmericanFilmDirectors> .
+  ?actor1   <http://dbpedia.org/ontology/activeYearsStartYear>  ?startAgeActor1 .
+  ?actor2   <http://dbpedia.org/ontology/activeYearsStartYear>  ?startAgeActor2 .
+  ?film3    <http://dbpedia.org/ontology/releaseDate>  ?releaseDate
+  
+  
+  
+
+}

@@ -1,0 +1,4 @@
+
+SELECT * 
+WHERE 
+{ ?value  <http://dbpedia.org/property/tenants>  "San Antonio Spurs"@en }

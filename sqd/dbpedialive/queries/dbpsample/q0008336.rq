@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Category:Animal_rights>
+            <http://www.w3.org/2004/02/skos/core#broader>  ?m
+}

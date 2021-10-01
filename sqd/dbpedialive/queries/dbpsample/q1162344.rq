@@ -1,0 +1,28 @@
+
+SELECT * 
+WHERE 
+{ OPTIONAL
+    { <http://dbpedia.org/resource/Pilo%C3%B1a>
+                <http://www.w3.org/2003/01/geo/wgs84_pos#lat>  ?lat
+    }
+  OPTIONAL
+    { <http://dbpedia.org/resource/Pilo%C3%B1a>
+                <http://www.w3.org/2003/01/geo/wgs84_pos#long>  ?long
+    }
+  OPTIONAL
+    { <http://dbpedia.org/resource/Pilo%C3%B1a>
+                <http://xmlns.com/foaf/0.1/depiction>  ?depiction
+    }
+  OPTIONAL
+    { <http://dbpedia.org/resource/Pilo%C3%B1a>
+                <http://xmlns.com/foaf/0.1/homepage>  ?homepage
+    }
+  OPTIONAL
+    { <http://dbpedia.org/resource/Pilo%C3%B1a>
+                <http://dbpedia.org/ontology/populationTotal>  ?population
+    }
+  OPTIONAL
+    { <http://dbpedia.org/resource/Pilo%C3%B1a>
+                <http://dbpedia.org/ontology/areaTotal>  ?area
+    }
+}

@@ -1,0 +1,10 @@
+
+SELECT * 
+WHERE 
+{ ?compound  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q11173> ;
+            <http://www.wikidata.org/prop/direct/P462>  ?color
+  OPTIONAL
+    { ?color  <http://www.wikidata.org/prop/direct/P465>  ?rgb }
+  
+
+}

@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Category:Novels_by_James_Branch_Cabell>
+            <http://www.w3.org/2004/02/skos/core#prefLabel>  ?value
+}

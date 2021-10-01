@@ -1,0 +1,10 @@
+
+SELECT * 
+WHERE 
+{ ?item     <http://www.wikidata.org/prop/direct/P30>  <http://www.wikidata.org/entity/Q15> ;
+            <http://www.wikidata.org/prop/direct/P37>  ?officiallanguage ;
+            <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q6256> .
+  ?officiallanguage
+            <http://www.wikidata.org/prop/direct/P424>  ?langcode .
+
+}

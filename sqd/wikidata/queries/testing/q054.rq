@@ -1,0 +1,8 @@
+
+SELECT * 
+WHERE 
+{ ?char  <http://www.wikidata.org/prop/direct/P1080>  <http://www.wikidata.org/entity/Q931597> ;
+         <http://www.wikidata.org/prop/direct/P31>  ?type ;
+         <http://www.wikidata.org/prop/direct/P1080>  ?universe
+
+}

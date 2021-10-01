@@ -1,0 +1,9 @@
+
+SELECT * 
+WHERE 
+{ ?organism_item
+            <http://www.wikidata.org/prop/direct/P276>  <http://www.wikidata.org/entity/Q5880> .
+  ?gene     <http://www.wikidata.org/prop/direct/P703>  ?organism_item ;
+            <http://www.wikidata.org/prop/direct/P1056>  <http://www.wikidata.org/entity/Q319541>
+
+}

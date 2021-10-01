@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/CNN>
+            <http://xmlns.com/foaf/0.1/name>  ?value
+}

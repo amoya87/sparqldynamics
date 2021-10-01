@@ -1,0 +1,8 @@
+
+SELECT * 
+WHERE 
+{ ?subject  <http://dbpedia.org/property/starring>  ?star ;
+            <http://dbpedia.org/property/director>  ?director ;
+            <http://dbpedia.org/property/name>  ?title
+
+}

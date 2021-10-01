@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/AXN_Sci_Fi>
+            a                     ?labels
+}

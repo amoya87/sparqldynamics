@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Bay_Park_Community_Hospital>
+            <http://dbpedia.org/property/wordnet_type>  ?value
+}

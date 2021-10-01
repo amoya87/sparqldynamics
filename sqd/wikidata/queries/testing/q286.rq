@@ -1,0 +1,18 @@
+
+SELECT * 
+WHERE 
+{ ?item  <http://www.wikidata.org/prop/direct/P179>  <http://www.wikidata.org/entity/Q471379> ;
+               <http://www.wikidata.org/prop/direct/P18>  ?img ;
+               <http://www.wikidata.org/prop/direct/P571>  ?date ;
+               <http://www.wikidata.org/prop/direct/P31>  ?instance .
+        
+        OPTIONAL
+          { ?item     <http://www.wikidata.org/prop/direct/P195>  ?collection .
+          
+          }
+        OPTIONAL
+          { ?item     <http://www.wikidata.org/prop/direct/P186>  ?material .
+          
+          }
+
+}

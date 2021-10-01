@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Ko%C5%A1ick%C3%A1_Bel%C3%A1>
+            <http://www.georss.org/georss/point>  ?value
+}

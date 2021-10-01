@@ -1,0 +1,39 @@
+
+SELECT * 
+WHERE 
+{   { ?s  <http://www.w3.org/2000/01/rdf-schema#label>  "Deadwood"@en }
+  UNION
+    { ?s  <http://www.w3.org/2000/01/rdf-schema#label>  "Deadwood (TV series)"@en }
+  UNION
+    { ?s  <http://www.w3.org/2000/01/rdf-schema#label>  "Deadwood (TV miniseries)"@en }
+  UNION
+    { ?s  <http://dbpedia.org/property/name>  "Deadwood"@en }
+  UNION
+    { ?s  <http://xmlns.com/foaf/0.1/name>  "Deadwood" }
+  UNION
+    { ?s  <http://www.w3.org/2000/01/rdf-schema#label>  "Deadwood"@en }
+  UNION
+    { ?s  <http://www.w3.org/2000/01/rdf-schema#label>  "Deadwood (TV series)"@en }
+  UNION
+    { ?s  <http://xmlns.com/foaf/0.1/name>  "Deadwood" }
+    { ?s  a                     <http://dbpedia.org/ontology/TelevisionShow> }
+  UNION
+    { ?s  a                     ?st
+    
+    }
+  UNION
+    { ?s  <http://www.w3.org/2004/02/skos/core#subject>  ?sub
+    
+    }
+  UNION
+    { ?s  <http://dbpedia.org/property/wikiPageUsesTemplate>  <http://dbpedia.org/resource/Template:infobox_television> }
+  OPTIONAL
+    {   { ?s  <http://xmlns.com/foaf/0.1/page>  ?linkUrl }
+      UNION
+        { ?s  <http://www.w3.org/2002/07/owl#sameAs>  ?sameAsUri }
+    }
+  OPTIONAL
+    { ?s  <http://dbpedia.org/property/imdbId>  ?imdbId }
+  OPTIONAL
+    { ?s  <http://dbpedia.org/ontology/episodenumber>  ?e }
+}

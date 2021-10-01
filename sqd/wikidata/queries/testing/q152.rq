@@ -1,0 +1,9 @@
+
+SELECT * 
+WHERE 
+{ VALUES ?prognostic_type { <http://www.wikidata.org/prop/direct/P3354> <http://www.wikidata.org/prop/direct/P3355> <http://www.wikidata.org/prop/direct/P3356> <http://www.wikidata.org/prop/direct/P3357> <http://www.wikidata.org/prop/direct/P3358> <http://www.wikidata.org/prop/direct/P3359> }
+  ?item     <http://www.wikidata.org/prop/direct/P3329>  ?civic_id ;
+            ?prognostic_type      ?prognostic_value .
+  ?property  <http://wikiba.se/ontology#directClaim>  ?prognostic_type
+
+}

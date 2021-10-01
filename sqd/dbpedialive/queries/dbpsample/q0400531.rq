@@ -1,0 +1,10 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Category:British_food_writers>
+            <http://www.w3.org/2004/02/skos/core#broader>  ?resource .
+  ?resource  <http://www.w3.org/2000/01/rdf-schema#label>  ?label
+  OPTIONAL
+    { ?resource  <http://xmlns.com/foaf/0.1/page>  ?page }
+
+}

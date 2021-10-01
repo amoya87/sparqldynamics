@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Citizens_Bank_Park>
+            <http://dbpedia.org/property/architect>  ?value
+}

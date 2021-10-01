@@ -1,0 +1,4 @@
+
+SELECT * 
+WHERE 
+{ ?value  <http://dbpedia.org/property/title>  <http://dbpedia.org/resource/St._Louis_Cardinals> }

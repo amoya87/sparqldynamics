@@ -1,0 +1,18 @@
+
+SELECT * 
+WHERE 
+{ ?author  ?label                "Ernest Hemmingway"@en .
+  ?book    <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q571> ;
+           <http://www.wikidata.org/prop/direct/P50>  ?author
+  OPTIONAL
+    { ?book   <http://www.wikidata.org/prop/direct/P136>  ?genre .
+    
+    }
+  OPTIONAL
+    { ?book    <http://www.wikidata.org/prop/direct/P179>  ?series .
+    
+    }
+  OPTIONAL
+    { ?book  <http://www.wikidata.org/prop/direct/P577>  ?publicationDate }
+
+}

@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Alice_Eve>
+            <http://dbpedia.org/ontology/birthDate>  ?obj
+}

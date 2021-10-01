@@ -1,0 +1,8 @@
+
+SELECT * 
+WHERE 
+{ VALUES ?disease { <http://www.wikidata.org/entity/Q188874> }
+  ?variant  <http://www.wikidata.org/prop/direct/P3358>  ?disease ;
+            <http://www.wikidata.org/prop/direct/P3433>  ?gene
+
+}

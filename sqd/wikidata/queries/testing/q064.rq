@@ -1,0 +1,10 @@
+
+SELECT * 
+WHERE 
+{ ?country  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q3624078>
+  
+  
+  OPTIONAL
+    { ?country  <http://www.wikidata.org/prop/direct/P36>  ?capital }
+
+}

@@ -1,0 +1,8 @@
+
+SELECT * 
+WHERE 
+{ ?person  <http://www.wikidata.org/prop/direct/P485>  <http://www.wikidata.org/entity/Q964035> ;
+           <http://www.wikidata.org/prop/direct/P18>  ?image ;
+           <http://www.wikidata.org/prop/direct/P2021>  ?Erdos
+
+}

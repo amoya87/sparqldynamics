@@ -1,0 +1,7 @@
+
+SELECT * 
+WHERE 
+{ ?subj  <http://www.wikidata.org/prop/direct/P2044>  ?elev .  
+  ?subj  <http://www.wikidata.org/prop/direct/P625>  ?coord
+
+}

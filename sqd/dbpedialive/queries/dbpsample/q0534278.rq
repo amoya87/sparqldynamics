@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Tennessee_State_Route_157>
+            <http://dbpedia.org/property/lengthMi>  ?value
+}

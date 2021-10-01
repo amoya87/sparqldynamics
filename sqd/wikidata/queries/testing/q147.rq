@@ -1,0 +1,9 @@
+
+SELECT * 
+WHERE 
+{ ?item  <http://www.wikidata.org/prop/direct/P351>  ?ncbi_gene ;
+         <http://www.wikidata.org/prop/direct/P703>  <http://www.wikidata.org/entity/Q15978631> ;
+         <http://schema.org/dateModified>  ?date_modified
+  
+
+}

@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Sutton_Courtenay>
+            <http://dbpedia.org/property/shireCounty>  ?shireCounty
+}

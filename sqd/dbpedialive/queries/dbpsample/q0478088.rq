@@ -1,0 +1,12 @@
+
+SELECT * 
+WHERE 
+{   { <http://dbpedia.org/resource/ESPN>
+                ?property             ?hasValue .
+      ?hasValue  <http://xmlns.com/foaf/0.1/name>  ?name
+    }
+  UNION
+    { ?isValueOf  ?property           <http://dbpedia.org/resource/ESPN> ;
+                <http://xmlns.com/foaf/0.1/name>  ?name2
+    }
+}

@@ -1,0 +1,11 @@
+
+SELECT * 
+WHERE 
+{ ?element  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q11344> ;
+            <http://www.wikidata.org/prop/direct/P2102>  ?boiling_point ;
+            <http://www.wikidata.org/prop/direct/P2101>  ?melting_point ;
+            <http://www.wikidata.org/prop/direct/P1108>  ?electronegativity ;
+            <http://www.wikidata.org/prop/direct/P2054>  ?density ;
+            <http://www.wikidata.org/prop/direct/P2067>  ?mass
+
+}

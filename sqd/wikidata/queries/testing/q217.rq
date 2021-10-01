@@ -1,0 +1,10 @@
+
+SELECT * 
+WHERE 
+{ ?item  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q8513> .
+  OPTIONAL
+    { ?item     <http://www.wikidata.org/prop/direct/P275>  ?licenseItem .
+    
+    }
+
+}

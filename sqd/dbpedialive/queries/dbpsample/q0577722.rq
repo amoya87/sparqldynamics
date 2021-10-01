@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Sam_Boyd_Stadium>
+            <http://dbpedia.org/property/years>  ?value
+}

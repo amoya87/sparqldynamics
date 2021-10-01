@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://en.wikipedia.org/wiki/List_of_religions_and_spiritual_traditions>
+            <http://xmlns.com/foaf/0.1/primaryTopic>  ?link
+}

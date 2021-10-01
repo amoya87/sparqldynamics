@@ -1,0 +1,7 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Kiss_105-108>
+            <http://dbpedia.org/ontology/abstract>  ?abstract
+
+}

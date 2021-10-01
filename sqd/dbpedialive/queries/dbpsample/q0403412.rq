@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Willow_Beach_Gauging_Station>
+            <http://xmlns.com/foaf/0.1/depiction>  ?value
+}

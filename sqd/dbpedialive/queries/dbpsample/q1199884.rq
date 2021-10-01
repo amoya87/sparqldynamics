@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Public_transport_in_Tallinn>
+            <http://xmlns.com/foaf/0.1/depiction>  ?value
+}

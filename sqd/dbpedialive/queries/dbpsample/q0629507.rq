@@ -1,0 +1,8 @@
+
+SELECT * 
+WHERE 
+{ ?pers1  <http://dbpedia.org/property/birthplace>  ?pais1 ;
+          <http://dbpedia.org/property/birthplace>  ?pais2 ;
+          <http://dbpedia.org/property/birthdate>  ?fecha .
+  ?pers2  <http://dbpedia.org/property/birthdate>  ?fecha
+}

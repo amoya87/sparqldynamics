@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/1988_French_Grand_Prix>
+            <http://dbpedia.org/property/secondDriver>  ?value
+}

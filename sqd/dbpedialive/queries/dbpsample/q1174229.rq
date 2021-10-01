@@ -1,0 +1,13 @@
+
+SELECT * 
+WHERE 
+{   { ?subject  a                     <http://dbpedia.org/class/yago/City108524735> ;
+                <http://dbpedia.org/property/population>  ?population
+    
+    }
+  UNION
+    { ?subject  a                     <http://dbpedia.org/class/yago/City108524735> ;
+                <http://dbpedia.org/property/populationUrban>  ?population
+    
+    }
+}

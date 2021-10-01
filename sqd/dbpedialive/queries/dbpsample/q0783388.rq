@@ -1,0 +1,13 @@
+
+SELECT * 
+WHERE 
+{ ?album  <http://dbpedia.org/property/artist>  <http://dbpedia.org/resource/Black_Sabbath> ;
+          a                     <http://dbpedia.org/class/yago/Album106591815>
+  OPTIONAL
+    { ?album  <http://www.w3.org/2000/01/rdf-schema#comment>  ?comment }
+  OPTIONAL
+    { ?album  <http://dbpedia.org/property/cover>  ?cover }
+  OPTIONAL
+    { ?album  <http://dbpedia.org/property/released>  ?dateofrelease }
+
+}

@@ -1,0 +1,9 @@
+
+SELECT * 
+WHERE 
+{   { <http://dbpedia.org/class/yago/AirportsInBrazil>
+                ?property  ?hasValue
+    }
+  UNION
+    { ?isValueOf  ?property  <http://dbpedia.org/class/yago/AirportsInBrazil> }
+}

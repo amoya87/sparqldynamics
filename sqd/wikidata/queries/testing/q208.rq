@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ ?item  <http://www.wikidata.org/prop/direct/P698>  ?pmid ;
+         <http://www.wikidata.org/prop/direct/P356>  ?doi
+}

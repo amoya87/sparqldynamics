@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ ?continent  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q5107>
+
+}

@@ -1,0 +1,7 @@
+
+SELECT * 
+WHERE
+      { ?state    <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q35657> .
+        ?otherState  <http://www.wikidata.org/prop/direct/P47>  ?state ;
+                  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q35657>
+      }

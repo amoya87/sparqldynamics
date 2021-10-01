@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://en.wikipedia.org/wiki/Mojave_phone_booth>
+            ?p  ?o
+}

@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ ?subject  a                     <http://dbpedia.org/ontology/Building> ;
+            <http://dbpedia.org/property/location>  <http://dbpedia.org/resource/Greece>
+}

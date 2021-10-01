@@ -1,0 +1,12 @@
+
+SELECT * 
+WHERE 
+{   { <http://dbpedia.org/resource/Chad>
+                ?property             ?hasValue .
+      ?hasValue  <http://xmlns.com/foaf/0.1/name>  ?name
+    }
+  UNION
+    { ?isValueOf  ?property           <http://dbpedia.org/resource/Chad> ;
+                <http://xmlns.com/foaf/0.1/name>  ?name2
+    }
+}

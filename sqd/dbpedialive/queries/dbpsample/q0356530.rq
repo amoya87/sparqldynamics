@@ -1,0 +1,7 @@
+
+SELECT * 
+WHERE 
+{ ?episode  <http://www.w3.org/2004/02/skos/core#subject>  ?season .
+  ?season   <http://www.w3.org/2000/01/rdf-schema#label>  ?season_title
+
+}

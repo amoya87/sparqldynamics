@@ -1,0 +1,8 @@
+
+SELECT * 
+WHERE 
+{ ?molecule  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q12140> ;
+            <http://www.wikidata.org/prop/direct/P274>  ?formule ;
+            <http://www.wikidata.org/prop/direct/P117>  ?picture
+
+}

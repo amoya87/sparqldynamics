@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ ?subj    <http://www.wikidata.org/prop/direct/P39>  <http://www.wikidata.org/entity/Q654291> ;
+           <http://www.wikidata.org/prop/direct/P21>  ?gender .
+}

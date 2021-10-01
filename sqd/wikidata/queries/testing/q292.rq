@@ -1,0 +1,10 @@
+
+SELECT * 
+WHERE 
+{ ?item  <http://www.wikidata.org/prop/direct/P106>  <http://www.wikidata.org/entity/Q1028181> ;
+               <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q5> ;
+               ?propertyclaim        [] .
+  ?property  <http://wikiba.se/ontology#propertyType>  <http://wikiba.se/ontology#ExternalId> ;
+            <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q19595382> ;
+            <http://wikiba.se/ontology#claim>  ?propertyclaim .
+}

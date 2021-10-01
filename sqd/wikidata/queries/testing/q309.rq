@@ -1,0 +1,9 @@
+
+SELECT * 
+WHERE 
+{ <http://www.wikidata.org/entity/Q5571382>
+            ?p                    <http://www.wikidata.org/entity/Q223243> .
+  ?property  ?ref                 ?p ;
+            a                     <http://wikiba.se/ontology#Property> .
+
+}

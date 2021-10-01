@@ -1,0 +1,10 @@
+
+SELECT * 
+WHERE 
+{ ?street  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q79007> ;
+           <http://www.wikidata.org/prop/direct/P17>  <http://www.wikidata.org/entity/Q142> ;
+           <http://www.wikidata.org/prop/direct/P131>  ?city ;
+           <http://www.wikidata.org/prop/direct/P138>  ?person .
+  ?person  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q5>
+
+}

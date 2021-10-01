@@ -1,0 +1,10 @@
+
+SELECT * 
+WHERE 
+{ ?journal  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q5633421> ;
+            <http://www.wikidata.org/prop/direct/P98>  ?editor
+  OPTIONAL
+    { ?journal  <http://www.wikidata.org/prop/direct/P123>  ?publisher }
+  ?editor  <http://www.wikidata.org/prop/direct/P2002>  ?twitter
+
+}

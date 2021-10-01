@@ -1,0 +1,10 @@
+
+SELECT * 
+WHERE 
+{ <http://www.wikidata.org/entity/Q9832>
+            <http://www.wikidata.org/prop/direct/P1082>  ?populatie .
+  ?city     <http://www.wikidata.org/prop/direct/P1082>  ?populatie ;
+            <http://www.wikidata.org/prop/direct/P625>  ?location
+  
+
+}

@@ -1,0 +1,7 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Astronomical_naming_conventions>
+            <http://dbpedia.org/ontology/abstract>  ?abstract
+
+}

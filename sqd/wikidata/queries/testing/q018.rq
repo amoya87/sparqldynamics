@@ -1,0 +1,9 @@
+
+SELECT * 
+WHERE 
+{ ?item  <http://www.wikidata.org/prop/direct/P361>  <http://www.wikidata.org/entity/Q297853> ;
+         <http://www.wikidata.org/prop/direct/P1082>  ?folkm_ngd .
+  ?area  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q1907114> ;
+         <http://www.wikidata.org/prop/direct/P527>  ?item
+
+}

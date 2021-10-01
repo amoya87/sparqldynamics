@@ -1,0 +1,10 @@
+
+SELECT * 
+WHERE 
+{ ?subj    <http://www.wikidata.org/prop/direct/P22>  ?father .
+  ?father  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q5> ;
+           <http://www.wikidata.org/prop/direct/P39>  <http://www.wikidata.org/entity/Q19546>
+  OPTIONAL
+    { ?father  <http://www.wikidata.org/prop/direct/P18>  ?picture }
+
+}

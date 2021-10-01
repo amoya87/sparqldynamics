@@ -1,0 +1,22 @@
+
+SELECT * 
+WHERE 
+{ ?city  a                     <http://dbpedia.org/ontology/Place> ;
+         <http://dbpedia.org/ontology/abstract>  ?abstract ;
+         <http://www.w3.org/2000/01/rdf-schema#label>  "Munich"@en
+  OPTIONAL
+    { ?airport  a                     <http://dbpedia.org/ontology/Airport> ;
+                <http://dbpedia.org/ontology/location>  ?city ;
+                <http://dbpedia.org/ontology/iataLocationIdentifier>  ?iata
+    }
+  OPTIONAL
+    { ?airport  a                     <http://dbpedia.org/ontology/Airport> ;
+                <http://dbpedia.org/ontology/location>  ?city ;
+                <http://dbpedia.org/ontology/iataLocationIdentifier>  ?iata
+      OPTIONAL
+        { ?airport  <http://xmlns.com/foaf/0.1/homepage>  ?airport_home }
+      OPTIONAL
+        { ?airport  <http://dbpedia.org/property/nativename>  ?airport_name }
+    }
+
+}

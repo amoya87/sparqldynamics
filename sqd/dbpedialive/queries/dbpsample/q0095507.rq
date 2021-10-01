@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Instant_Star>
+            <http://xmlns.com/foaf/0.1/homepage>  ?value
+}

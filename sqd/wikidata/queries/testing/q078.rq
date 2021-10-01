@@ -1,0 +1,11 @@
+
+SELECT * 
+WHERE 
+{ VALUES ?airport { <http://www.wikidata.org/entity/Q17480> }
+  ?airport  <http://www.wikidata.org/prop/direct/P81>  ?connectsairport ;
+            <http://www.wikidata.org/prop/direct/P625>  ?base_airport_coor .
+  ?connectsairport
+            <http://www.wikidata.org/prop/direct/P931>  ?place_served ;
+            <http://www.wikidata.org/prop/direct/P625>  ?coor
+
+}

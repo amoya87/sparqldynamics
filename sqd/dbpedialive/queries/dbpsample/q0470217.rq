@@ -1,0 +1,7 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Ferranti_Mark_1>
+            <http://dbpedia.org/ontology/abstract>  ?abstract
+
+}

@@ -1,0 +1,14 @@
+
+SELECT * 
+WHERE 
+{ VALUES ?countryclass { <http://www.wikidata.org/entity/Q3024240> <http://www.wikidata.org/entity/Q6256> }
+  ?h  <http://www.wikidata.org/prop/direct/P31>  ?countryclass ;
+      <http://www.wikidata.org/prop/direct/P571>  ?inception
+  OPTIONAL
+    { ?h  <http://www.wikidata.org/prop/direct/P576>  ?dissolved }
+  
+  
+  
+  OPTIONAL
+    { ?h  <http://www.wikidata.org/prop/direct/P625>  ?coor }
+}

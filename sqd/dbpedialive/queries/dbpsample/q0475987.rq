@@ -1,0 +1,7 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Packet_generator>
+            <http://dbpedia.org/ontology/abstract>  ?abstract
+
+}

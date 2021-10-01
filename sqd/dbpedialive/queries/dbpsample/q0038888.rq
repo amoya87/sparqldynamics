@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Atlanta_Thrashers>
+            <http://xmlns.com/foaf/0.1/depiction>  ?value
+}

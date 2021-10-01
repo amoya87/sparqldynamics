@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Category:New_York_Islanders_players>
+            <http://www.w3.org/2004/02/skos/core#prefLabel>  ?value
+}

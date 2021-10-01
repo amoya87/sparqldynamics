@@ -1,0 +1,7 @@
+
+SELECT * 
+WHERE 
+{ ?item  <http://www.wikidata.org/prop/direct/P374>  ?inseeCode
+  
+
+}

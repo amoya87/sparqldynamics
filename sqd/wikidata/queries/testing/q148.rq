@@ -1,0 +1,7 @@
+
+SELECT * 
+WHERE 
+{ ?item  <http://www.wikidata.org/prop/direct/P3329>  ?civic_id ;
+         <http://www.wikidata.org/prop/direct/P31>  ?variant_type
+
+}

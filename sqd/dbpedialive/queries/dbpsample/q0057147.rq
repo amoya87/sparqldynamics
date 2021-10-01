@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/class/yago/StockportCountyF.C.Players>
+            ?p  ?o
+}

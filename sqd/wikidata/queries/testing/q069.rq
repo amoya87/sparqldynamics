@@ -1,0 +1,7 @@
+
+SELECT * 
+WHERE 
+{ ?country  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q6256> ;
+            <http://www.wikidata.org/prop/direct/P1082>  ?population
+
+}

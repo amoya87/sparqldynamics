@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Victoria_and_Albert_Museum>
+            <http://xmlns.com/foaf/0.1/name>  ?value
+}

@@ -1,0 +1,12 @@
+
+SELECT * 
+WHERE 
+{ ?item   <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q2977> ;
+          <http://www.wikidata.org/prop/direct/P131>  ?place .
+  ?place  <http://www.wikidata.org/prop/direct/P131>  <http://www.wikidata.org/entity/Q90> .
+  OPTIONAL
+    { ?item  <http://www.wikidata.org/prop/direct/P625>  ?coords }
+  OPTIONAL
+    { ?item  <http://www.wikidata.org/prop/direct/P18>  ?image }
+    
+}

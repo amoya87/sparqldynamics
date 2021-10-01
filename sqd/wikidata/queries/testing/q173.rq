@@ -1,0 +1,9 @@
+
+SELECT * 
+WHERE 
+{ ?idExtension  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q235557> ;
+            <http://www.wikidata.org/prop/direct/P1195>  ?extension
+  OPTIONAL
+    { ?idExtension  <http://www.wikidata.org/prop/direct/P1163>  ?mediaType }
+
+}

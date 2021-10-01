@@ -1,0 +1,8 @@
+
+SELECT * 
+WHERE 
+{ ?person  <http://dbpedia.org/property/birthPlace>  <http://dbpedia.org/resource/Sweden> ;
+           <http://dbpedia.org/ontology/birthDate>  ?birth ;
+           <http://xmlns.com/foaf/0.1/name>  ?name
+
+}

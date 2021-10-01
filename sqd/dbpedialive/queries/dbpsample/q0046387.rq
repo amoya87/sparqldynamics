@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Lindsay_Lohan>
+            <http://dbpedia.org/ontology/birthPlace>  ?obj
+}

@@ -1,0 +1,4 @@
+
+SELECT * 
+WHERE 
+{ ?person  <http://www.wikidata.org/prop/direct/P569>  ?date }

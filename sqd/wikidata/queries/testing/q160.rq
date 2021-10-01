@@ -1,0 +1,8 @@
+
+SELECT * 
+WHERE 
+{ ?path    <http://www.wikidata.org/prop/direct/P2410>  ?WikipathsID ;
+           <http://www.wikidata.org/prop/direct/P527>  ?pwPart .
+  ?pwPart  <http://www.wikidata.org/prop/direct/P31>  ?var .
+  VALUES  ?var { <http://www.wikidata.org/entity/Q11173> <http://www.wikidata.org/entity/Q7187> }
+}

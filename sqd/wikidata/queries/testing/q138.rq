@@ -1,0 +1,9 @@
+
+SELECT * 
+WHERE 
+{ ?building  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q7138926> ;
+            <http://www.wikidata.org/prop/direct/P18>  ?picture
+  OPTIONAL
+    { ?building  <http://www.wikidata.org/prop/direct/P17>  ?country }
+
+}

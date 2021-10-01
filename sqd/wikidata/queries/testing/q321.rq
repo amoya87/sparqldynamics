@@ -1,0 +1,10 @@
+
+SELECT * 
+WHERE 
+{ ?item  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q13442814>
+    { ?item  <http://www.wikidata.org/prop/direct/P921>  <http://www.wikidata.org/entity/Q202864> }
+  UNION
+    { ?item  <http://www.wikidata.org/prop/direct/P921>  <http://www.wikidata.org/entity/Q8071861> }
+  ?reference  ?referenceType  ?item
+
+}

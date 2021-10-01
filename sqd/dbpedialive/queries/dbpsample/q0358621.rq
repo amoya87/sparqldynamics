@@ -1,0 +1,47 @@
+
+SELECT * 
+WHERE 
+{ {   { <http://dbpedia.org/resource/Air_Berlin>
+                  <http://dbpedia.org/property/redirect>  ?company
+      }
+    UNION
+      { <http://dbpedia.org/resource/Air_Berlin_PLC>
+                  <http://dbpedia.org/property/redirect>  ?company
+      }
+    UNION
+      { ?company  <http://dbpedia.org/property/homepage>  <http://www.airberlin.com> }
+    UNION
+      { ?company  <http://dbpedia.org/property/homepage>  <http://www.airberlin.com/> }
+    UNION
+      { ?company  <http://dbpedia.org/property/symbol>  "ABA" }
+    UNION
+      { ?company  <http://www.w3.org/2000/01/rdf-schema#label>  "Air Berlin PLC"@en }
+    UNION
+      { ?company  <http://www.w3.org/2000/01/rdf-schema#label>  "Air Berlin"@en }
+    UNION
+      { ?company  <http://www.w3.org/2000/01/rdf-schema#label>  "Air Berlin"@en }
+    UNION
+      { ?company  <http://dbpedia.org/property/name>  "Air Berlin PLC"@en }
+    UNION
+      { ?company  <http://dbpedia.org/property/companyName>  "Air Berlin PLC"@en }
+    UNION
+      { ?company  <http://xmlns.com/foaf/0.1/name>  "Air Berlin PLC" }
+  }
+  { ?company  a                     ?type
+  
+  }
+  { ?company  <http://www.w3.org/2000/01/rdf-schema#label>  ?label
+  
+  }
+  OPTIONAL
+    {   { ?company  <http://dbpedia.org/property/homepage>  ?webaddress }
+      UNION
+        { ?company  <http://dbpedia.org/property/companyName>  ?companyName }
+      UNION
+        { ?company  <http://dbpedia.org/property/symbol>  ?symbol }
+      UNION
+        { ?company  <http://www.w3.org/2002/07/owl#sameAs>  ?sameAsUri }
+      UNION
+        { ?company  <http://xmlns.com/foaf/0.1/page>  ?linkUrl }
+    }
+}

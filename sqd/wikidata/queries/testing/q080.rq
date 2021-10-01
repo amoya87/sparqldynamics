@@ -1,0 +1,8 @@
+
+SELECT * 
+WHERE 
+{ VALUES ?highway { <http://www.wikidata.org/entity/Q559037> <http://www.wikidata.org/entity/Q58767> }
+  ?highway  <http://www.wikidata.org/prop/direct/P2789>  ?city .
+  ?city     <http://www.wikidata.org/prop/direct/P625>  ?coordinates
+
+}

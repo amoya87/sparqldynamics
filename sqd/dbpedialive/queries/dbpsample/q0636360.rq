@@ -1,0 +1,9 @@
+
+SELECT * 
+WHERE 
+{   { <http://dbpedia.org/resource/Bruce_Willis>
+                <http://dbpedia.org/property/spouse>  ?o1
+    }
+  UNION
+    { ?o1  <http://dbpedia.org/property/spouse>  <http://dbpedia.org/resource/Bruce_Willis> }
+}

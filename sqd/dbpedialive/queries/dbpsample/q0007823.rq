@@ -1,0 +1,8 @@
+
+SELECT * 
+WHERE 
+{ ?country  a                     <http://dbpedia.org/class/yago/LandlockedCountries> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>  ?country_name ;
+            <http://www.w3.org/2003/01/geo/wgs84_pos#lat>  ?latitude
+
+}

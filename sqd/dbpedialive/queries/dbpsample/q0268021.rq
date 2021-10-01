@@ -1,0 +1,7 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/List_of_Little_Miss_characters>
+            <http://dbpedia.org/ontology/abstract>  ?abstract
+
+}

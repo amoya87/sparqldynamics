@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/1982_San_Marino_Grand_Prix>
+            <http://dbpedia.org/property/fastTime>  ?value
+}

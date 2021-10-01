@@ -1,0 +1,7 @@
+
+SELECT * 
+WHERE 
+{ ?ereader  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q726235> ;
+            <http://www.wikidata.org/prop/direct/P1072>  <http://www.wikidata.org/entity/Q1941622>
+
+}

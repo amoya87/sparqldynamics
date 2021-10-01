@@ -1,0 +1,10 @@
+
+SELECT * 
+WHERE 
+{ ?subj  <http://www.wikidata.org/prop/direct/P170>  <http://www.wikidata.org/entity/Q5593>
+  OPTIONAL
+    { ?subj  <http://www.wikidata.org/prop/direct/P276>  ?loc .
+      ?loc   <http://www.wikidata.org/prop/direct/P625>  ?coord
+    }
+
+}

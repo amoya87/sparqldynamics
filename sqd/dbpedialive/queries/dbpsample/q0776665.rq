@@ -1,0 +1,4 @@
+
+SELECT * 
+WHERE 
+{ ?cat1  <http://www.w3.org/2004/02/skos/core#broader>  <http://dbpedia.org/resource/Category:Computing> }

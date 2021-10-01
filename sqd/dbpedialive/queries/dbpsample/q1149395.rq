@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Robert_Louis_Stevenson>
+            <http://xmlns.com/foaf/0.1/name>  ?value
+}

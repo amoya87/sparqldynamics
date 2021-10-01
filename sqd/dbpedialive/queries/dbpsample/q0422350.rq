@@ -1,0 +1,9 @@
+
+SELECT * 
+WHERE 
+{ ?qqq  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Poland> ;
+        <http://dbpedia.org/ontology/birthDate>  ?birth ;
+        <http://xmlns.com/foaf/0.1/name>  ?name ;
+        <http://dbpedia.org/ontology/deathDate>  ?death
+
+}

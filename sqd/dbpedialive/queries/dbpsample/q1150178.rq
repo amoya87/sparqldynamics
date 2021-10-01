@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Noel_Gallagher>
+            <http://dbpedia.org/ontology/birthDate>  ?abstract
+}

@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ ?composition  <http://www.wikidata.org/prop/direct/P86>  ?composer ;
+                <http://www.wikidata.org/prop/direct/P826>  ?tonality .
+}

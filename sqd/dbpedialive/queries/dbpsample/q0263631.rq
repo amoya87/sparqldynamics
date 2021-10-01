@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/List_of_counties_in_Maryland>
+            <http://dbpedia.org/property/data>  ?value
+}

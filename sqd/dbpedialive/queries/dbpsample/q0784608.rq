@@ -1,0 +1,4 @@
+
+SELECT * 
+WHERE 
+{ ?value  <http://dbpedia.org/property/raceNo>  "7"^^<http://www.w3.org/2001/XMLSchema#int> }

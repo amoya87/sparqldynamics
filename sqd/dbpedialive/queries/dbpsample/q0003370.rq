@@ -1,0 +1,43 @@
+
+SELECT * 
+WHERE 
+{   { <http://dbpedia.org/resource/Persistent_vegetative_state>
+                <http://dbpedia.org/property/redirect>  ?cond
+    }
+  UNION
+    { ?cond  <http://www.w3.org/2000/01/rdf-schema#label>  "persistent vegetative state"@en }
+  UNION
+    { ?cond  <http://www.w3.org/2000/01/rdf-schema#label>  "persistent vegetative state (medical disorder)"@en }
+  UNION
+    { ?cond  <http://www.w3.org/2000/01/rdf-schema#label>  "persistent vegetative state (disease)"@en }
+  UNION
+    { ?cond  <http://dbpedia.org/property/name>  "persistent vegetative state"@en }
+  UNION
+    { ?cond  <http://xmlns.com/foaf/0.1/name>  "persistent vegetative state" }
+  UNION
+    { ?cond  <http://www.w3.org/2000/01/rdf-schema#label>  "Persistent vegetative state"@en }
+  UNION
+    { ?cond  <http://www.w3.org/2000/01/rdf-schema#label>  "Persistent vegetative state (medical disorder)"@en }
+  UNION
+    { ?cond  <http://www.w3.org/2000/01/rdf-schema#label>  "Persistent vegetative state (disease)"@en }
+  UNION
+    { ?cond  <http://xmlns.com/foaf/0.1/name>  "Persistent vegetative state" }
+    { ?cond  a                     <http://dbpedia.org/ontology/Disease> }
+  UNION
+    { ?cond  a                     ?condType
+    
+    }
+  UNION
+    { ?cond  <http://www.w3.org/2004/02/skos/core#subject>  ?subject
+    
+    }
+  UNION
+    { ?cond  <http://dbpedia.org/property/wikiPageUsesTemplate>  ?template
+    
+    }
+  OPTIONAL
+    {   { ?cond  <http://www.w3.org/2002/07/owl#sameAs>  ?sameAsUri }
+      UNION
+        { ?cond  <http://xmlns.com/foaf/0.1/page>  ?linkUrl }
+    }
+}

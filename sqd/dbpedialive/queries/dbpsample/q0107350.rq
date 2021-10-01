@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/23rd_Fighter_Squadron>
+            a                     ?classes
+}

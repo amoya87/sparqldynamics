@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/North_Dakota_Mill_and_Elevator>
+            <http://www.w3.org/2003/01/geo/wgs84_pos#long>  ?value
+}

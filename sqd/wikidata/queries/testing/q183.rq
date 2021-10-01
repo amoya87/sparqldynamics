@@ -1,0 +1,9 @@
+
+SELECT * 
+WHERE 
+{ ?element  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q11344> ;
+            <http://www.wikidata.org/prop/direct/P1086>  ?protons ;
+            <http://www.wikidata.org/prop/direct/P246>  ?symbol .
+  ?isotope  <http://www.wikidata.org/prop/direct/P279>  ?element ;
+            <http://www.wikidata.org/prop/direct/P1148>  ?neutrons
+}

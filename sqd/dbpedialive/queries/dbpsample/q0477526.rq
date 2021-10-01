@@ -1,0 +1,6 @@
+
+SELECT * 
+WHERE 
+{ <http://dbpedia.org/resource/Tony_Holland>
+            <http://dbpedia.org/property/wordnet_type>  ?value
+}

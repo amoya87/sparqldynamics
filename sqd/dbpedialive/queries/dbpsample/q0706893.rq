@@ -1,0 +1,12 @@
+
+SELECT * 
+WHERE 
+{ ?mp  <http://xmlns.com/foaf/0.1/name>  ?name ;
+       <http://dbpedia.org/ontology/abstract>  ?abstract ;
+       <http://dbpedia.org/ontology/thumbnail>  ?thumb ;
+       <http://dbpedia.org/property/party>  ?party ;
+       <http://dbpedia.org/property/almaMater>  ?uni
+  
+  
+
+}

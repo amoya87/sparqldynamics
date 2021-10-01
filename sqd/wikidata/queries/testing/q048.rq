@@ -1,0 +1,8 @@
+
+SELECT * 
+WHERE
+      { ?director  <http://www.wikidata.org/prop/direct/P106>  <http://www.wikidata.org/entity/Q2526255> .
+        ?film     <http://www.wikidata.org/prop/direct/P57>  ?director .
+        ?sitelink  <http://schema.org/about>  ?director
+      }
+

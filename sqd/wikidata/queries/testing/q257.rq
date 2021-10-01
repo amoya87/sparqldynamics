@@ -1,0 +1,16 @@
+
+SELECT * 
+WHERE 
+{   { ?subj  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q571> }
+  UNION
+    { ?subj  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q7725634> }
+  ?subj  <http://www.wikidata.org/prop/direct/P577>  ?date
+  
+  OPTIONAL
+    {   { ?subj  <http://www.wikidata.org/prop/direct/P291>  ?place }
+      UNION
+        { ?subj  <http://www.wikidata.org/prop/direct/P840>  ?place }
+      ?place  <http://www.wikidata.org/prop/direct/P625>  ?coord
+    }
+
+}

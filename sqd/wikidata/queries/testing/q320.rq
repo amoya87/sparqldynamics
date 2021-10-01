@@ -1,0 +1,11 @@
+
+SELECT * 
+WHERE 
+{   { ?item  <http://www.wikidata.org/prop/direct/P921>  <http://www.wikidata.org/entity/Q202864> }
+  UNION
+    { ?item  <http://www.wikidata.org/prop/direct/P921>  <http://www.wikidata.org/entity/Q8071861> }
+    { ?item  <http://www.wikidata.org/prop/direct/P2093>  ?short_author }
+  UNION
+    { ?item  <http://www.wikidata.org/prop/direct/P50>  ?short_author }
+
+}

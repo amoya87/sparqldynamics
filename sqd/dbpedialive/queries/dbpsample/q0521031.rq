@@ -1,0 +1,41 @@
+
+SELECT * 
+WHERE 
+{   { <http://dbpedia.org/resource/T%C3%A2rgu_Mure%C5%9F>
+                <http://dbpedia.org/property/abstract>  ?abstract
+    }
+  UNION
+    { <http://dbpedia.org/resource/T%C3%A2rgu_Mure%C5%9F>
+                <http://dbpedia.org/property/hasPhotoCollection>  ?photos
+    }
+  UNION
+    { <http://dbpedia.org/resource/T%C3%A2rgu_Mure%C5%9F>
+                <http://dbpedia.org/property/officialName>  ?name
+    }
+  UNION
+    { <http://dbpedia.org/resource/T%C3%A2rgu_Mure%C5%9F>
+                <http://www.w3.org/2000/01/rdf-schema#label>  ?name
+    }
+  UNION
+    { <http://dbpedia.org/resource/T%C3%A2rgu_Mure%C5%9F>
+                <http://dbpedia.org/property/populationAsOf>  ?populationAsOf
+    }
+  UNION
+    { <http://dbpedia.org/resource/T%C3%A2rgu_Mure%C5%9F>
+                <http://dbpedia.org/property/populationTotal>  ?population
+    }
+  UNION
+    { <http://dbpedia.org/resource/T%C3%A2rgu_Mure%C5%9F>
+                <http://dbpedia.org/property/settlemantType>  ?type
+    }
+  UNION
+    { <http://dbpedia.org/resource/T%C3%A2rgu_Mure%C5%9F>
+                <http://dbpedia.org/property/website>  ?website
+    }
+  UNION
+    { <http://dbpedia.org/resource/T%C3%A2rgu_Mure%C5%9F>
+                <http://xmlns.com/foaf/0.1/page>  ?website
+    }
+  UNION
+    { ?place  <http://dbpedia.org/property/locationTown>  <http://dbpedia.org/resource/T%C3%A2rgu_Mure%C5%9F> }
+}
